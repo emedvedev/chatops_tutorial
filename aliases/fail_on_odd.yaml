@@ -1,6 +1,6 @@
 ---
 name: "fail_on_odd"
 description: "Sample workflow that fails on every odd minute"
-action_ref: "chatops-training.fail_on_odd"
+action_ref: "chatops-training.fail_on_odd_silent"
 formats:
   - "fail on odd"
