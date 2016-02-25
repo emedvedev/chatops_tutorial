@@ -9,5 +9,5 @@ parameters:
     immutable: true
     default: 'echo {{ phrase }}'
   phrase:
-  	type: string
-  	required: true
+    type: string
+    required: true
