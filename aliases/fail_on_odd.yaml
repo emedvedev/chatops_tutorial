@@ -1,5 +1,5 @@
 ---
-name: "echo"
+name: "fail_on_odd"
 description: "Sample workflow that fails on every odd minute"
 action_ref: "chatops-training.fail_on_odd"
 formats:
