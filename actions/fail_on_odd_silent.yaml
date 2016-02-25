@@ -1,7 +1,7 @@
 ---
 description: Fail every odd minute
 enabled: true
-entry_point: workflows/fail_on_odd.yaml
+entry_point: workflows/fail_on_odd_silent.yaml
 name: fail_on_odd
 pack: chatops-training
 runner_type: mistral-v2
