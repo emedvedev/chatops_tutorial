@@ -12,4 +12,4 @@ ack:
   append_url: false
   format: "Ack! I'll repeat your sentence now."
 result:
-  format: "here goes: {~} {{ execution.result | truncate(70) }}"
+  format: "here goes: {~} {{ execution.result.stdout | truncate(10) }}"
