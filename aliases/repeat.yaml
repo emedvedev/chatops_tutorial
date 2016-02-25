@@ -7,9 +7,9 @@ formats:
   - "say {{ phrase='Just when I thought I was out...' }}"
   - display: "repeat {{ phrase }}"
     representation: 
-    - "repeat (it|this)?:? {{ phrase }}"
+    - "repeat( (it|this))?:? {{ phrase }}"
 ack:
   append_url: false
   format: "Ack! I'll repeat your sentence now."
 result:
-  format: "here goes: {~} {{ result | truncate(70) }}"
+  format: "here goes: {~} {{ execution.result | truncate(70) }}"
