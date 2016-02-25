@@ -1,0 +1,22 @@
+---
+version: '2.0'
+
+chatops-training.random:
+  
+  type: direct
+
+  tasks:
+
+    get_minute:
+      action: core.local
+      input:
+        cmd: "date +%M"
+      publish:
+        minute: <% $.get_minute.stdout %>
+      on-success:
+        - fail_on_odd
+
+    fail_on_odd:
+      action: core.local
+      input:
+        cmd: "[ $((<% $.minute %>%2)) -eq 0 ]"

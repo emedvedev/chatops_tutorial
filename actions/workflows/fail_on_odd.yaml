@@ -1,0 +1,49 @@
+---
+version: '2.0'
+
+chatops-training.random:
+  
+  type: direct
+
+  input: 
+    - channel
+
+  tasks:
+
+    get_minute:
+      action: core.local
+      input:
+        cmd: "date +%M"
+      publish:
+        minute: <% $.get_minute.stdout %>
+      on-success:
+        - post_minute
+
+    post_minute:
+      action: chatops.post_message
+      input:
+        channel: '<% $.channel %>'
+        message: 'Current minute is <% $.minute %>.'
+      on-success:
+        - fail_on_odd
+
+    fail_on_odd:
+      action: core.local
+      input:
+        cmd: "[ $((<% $.minute %>%2)) -eq 0 ]"
+      on-success:
+        - report_success
+      on-failure:
+        - report_failure
+
+    report_success:
+      action: chatops.post_message
+      input:
+        channel: '<% $.channel %>'
+        message: 'The workflow execution has been successful!'
+
+    report_failure:
+      action: chatops.post_message
+      input:
+        channel: '<% $.channel %>'
+        message: 'The workflow execution failed.'
