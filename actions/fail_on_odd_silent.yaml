@@ -4,9 +4,4 @@ enabled: true
 entry_point: workflows/fail_on_odd.yaml
 name: fail_on_odd
 pack: chatops-training
-parameters:
-  channel:
-    required: true
-    type: string
-    description: "Chatroom to report to"
 runner_type: mistral-v2
