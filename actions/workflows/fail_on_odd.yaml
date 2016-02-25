@@ -1,7 +1,7 @@
 ---
 version: '2.0'
 
-chatops-training.random:
+chatops-training.fail_on_odd:
   
   type: direct
 
