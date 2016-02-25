@@ -33,7 +33,7 @@ chatops-training.fail_on_odd:
         cmd: "[ $((<% $.minute %>%2)) -eq 0 ]"
       on-success:
         - report_success
-      on-failure:
+      on-error:
         - report_failure
 
     report_success:
