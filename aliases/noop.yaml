@@ -1,0 +1,6 @@
+---
+name: "noop"
+description: "Do nothing"
+action_ref: "core.noop"
+formats:
+  - "noop"

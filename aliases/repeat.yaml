@@ -1,0 +1,15 @@
+---
+name: "echo"
+description: "Repeat a sentence"
+action_ref: "chatops-training.repeat"
+formats:
+  - "echo {{ phrase }}"
+  - "say {{ phrase='Just when I thought I was out...' }}"
+  - display: "repeat {{ phrase }}"
+    representation: 
+    - "repeat (it|this)?:? {{ phrase }}"
+ack:
+  append_url: false
+  format: "Ack! I'll repeat your sentence now."
+result:
+  format: "here goes: {~} {{ result | truncate(70) }}"
