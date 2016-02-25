@@ -6,7 +6,7 @@ formats:
   - "echo {{ phrase }}"
   - "say {{ phrase='Just when I thought I was out...' }}"
   - display: "repeat {{ phrase }}"
-    representation: 
+    representation:
     - "repeat( (it|this))?:? {{ phrase }}"
 ack:
   append_url: false

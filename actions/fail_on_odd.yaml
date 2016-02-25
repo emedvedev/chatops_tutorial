@@ -1,7 +1,12 @@
 ---
-description: Fail every odd minute (no post_message)
+description: Fail every odd minute
 enabled: true
-entry_point: workflows/fail_on_odd_silent.yaml
-name: fail_on_odd_silent
+entry_point: workflows/fail_on_odd.yaml
+name: fail_on_odd
 pack: chatops-training
+parameters:
+  channel:
+    required: true
+    type: string
+    description: "Chatroom to report to"
 runner_type: mistral-v2
