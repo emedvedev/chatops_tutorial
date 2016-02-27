@@ -2,12 +2,18 @@
 
 A small pack for showcasing ChatOps capabilities in StackStorm.
 
-* [ ] A sample Mistral workflow.
-* [ ] Same workflow with `post_message` actions.
-* [ ] A workflow definition.
-* [ ] Same definition with notifications enabled.
-* [ ] Same definition with `skip_notify`.
-* [ ] An alias for a no-op action.
-* [ ] Same alias with multiple format strings and custom output formatting.
-* [ ] An alias for a local runner.
-* [ ] An alias for the abovementioned workflow.
+### Actions
+
+1. `repeat.yaml`: a simple echo action to use with an alias.
+
+2. `fail_on_odd.yaml`: a workflow failing every other minute; utilizes `chatops.post_message` to demonstrate notifications.
+
+3. `fail_on_odd_silent.yaml`: same workflow sans `post_message` to launch with an alias and get the full result.
+
+### Aliases
+
+1. `noop.yaml`: a very simple no-op alias to demonstrate how aliases work in general.
+
+2. `repeat.yaml`: an extended alias with most extra parameters in use.
+
+3. `fail_on_odd.yaml`: an alias for the `fail_on_odd_silent` workflow, outputting the whole result object. Meant to show how much variables and objects you can use in your Jinja template.
