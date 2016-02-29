@@ -2,10 +2,10 @@
 version: '2.0'
 
 chatops-training.fail_on_odd:
-  
+
   type: direct
 
-  input: 
+  input:
     - channel
 
   tasks:
