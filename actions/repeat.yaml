@@ -1,5 +1,5 @@
 ---
-description: Action that executes an arbitrary Linux command on the localhost.
+description: Action that executes the "echo" Linux command on localhost.
 enabled: true
 entry_point: ''
 runner_type: "run-local"
