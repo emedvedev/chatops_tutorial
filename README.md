@@ -1,4 +1,4 @@
-# ChatOps + StackStorm demo pack
+# ChatOps + StackStorm tutorial pack
 
 A small pack for showcasing ChatOps capabilities in StackStorm.
 
