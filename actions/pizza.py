@@ -9,6 +9,6 @@ class PizzaAction(Action):
 
     def run(self):
         return requests.post(
-            self.config.pizza.order_page,
-            data=self.config.pizza.payload
+            self.config['pizza']['order_page'],
+            data=self.config['pizza']['payload']
         ).text
