@@ -1,0 +1,10 @@
+---
+name: "pizza"
+description: "Order a pizza using the pre-defined payload (large chicken BBQ)"
+action_ref: "chatops-training.pizza"
+formats:
+  - "get me a pizza"
+ack:
+  enabled: false
+result:
+  format: "I've submitted your order. You'll get your pizza first thing!{~}"

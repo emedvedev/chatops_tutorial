@@ -1,0 +1,7 @@
+---
+name: "pizza"
+pack: chatops-training
+runner_type: "run-python"
+description: "Order a pizza using the pre-defined payload (large chicken BBQ)"
+enabled: true
+entry_point: "pizza.py"
