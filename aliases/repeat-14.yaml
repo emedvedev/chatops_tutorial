@@ -1,0 +1,25 @@
+---
+name: "echo"
+description: "Repeat a sentence"
+action_ref: "chatops-training.repeat"
+formats:
+  - "echo {{ phrase }}"
+  - "say {{ phrase }} in {{ color }}"
+  - "say {{ phrase='Just when I thought I was out...' }}"
+  - display: "repeat {{ phrase }}"
+    representation:
+    - "repeat( (it|this))?:? {{ phrase }}"
+ack:
+  append_url: false
+  format: "Ack! I'll repeat your sentence now."
+result:
+  format: "here goes: {~} {{ execution.result.stdout | truncate(40) }}"
+  extra:
+    slack:
+      author_name: "Edward Medvedev"
+      author_link: "https://github.com/emedvedev"
+      author_icon: "https://avatars3.githubusercontent.com/u/145218?v=3&s=16"
+    color: "{{'color' in execution.parameters and execution.parameters.color}}"
+extra:
+  security:
+    twofactor: true
