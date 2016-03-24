@@ -17,3 +17,5 @@ A small pack for showcasing ChatOps capabilities in StackStorm.
 2. `repeat.yaml`: an extended alias with most extra parameters in use.
 
 3. `fail_on_odd_silent.yaml`: an alias for the `fail_on_odd_silent` workflow, outputting the whole result object. Meant to show how much variables and objects you can use in your Jinja template.
+
+4. `repeat-14.yaml`: an alias with experimental 1.4 features: slack attachment API parameters and two-factor auth.
