@@ -6,7 +6,7 @@ A small pack for showcasing ChatOps capabilities in StackStorm.
 
 1. `repeat.yaml`: a simple echo action to use with an alias.
 
-2. `fail_on_odd.yaml`: a workflow failing every odd minute; utilizes `chatops.post_message` to demonstrate notifications.
+2. `fail_on_odd.yaml`: a workflow failing every other minute; utilizes `chatops.post_message` to demonstrate notifications.
 
 3. `fail_on_odd_silent.yaml`: same workflow sans `post_message` to launch with an alias and get the full result.
 
