@@ -1,6 +1,6 @@
 ---
 name: "pizza"
-description: "Order a pizza using the pre-defined payload (large chicken BBQ)"
+description: "Order a pizza using the pre-defined payload (aka generic POST request)"
 action_ref: "chatops-training.pizza"
 formats:
   - "get me a pizza"
