@@ -12,7 +12,7 @@ ack:
 result:
   format: |
     Restart succeeded, the server is back online: {~}
-    10.0.2.15: online.
+    Staging (10.0.2.15): online.
   extra:
     slack:
       color: "good"

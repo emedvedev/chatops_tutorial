@@ -9,10 +9,10 @@ ack:
 result:
   format: |
     done, here's the full report for your network:{~}
-    10.0.2.12: online.
-    10.0.2.13: online.
-    10.0.2.14: online.
-    10.0.2.15: *offline*.
+    API (10.0.2.12): online.
+    DB (10.0.2.13): online.
+    DB2 (10.0.2.14): online.
+    Staging (10.0.2.15): *offline*.
   extra:
     slack:
       author_name: "Sensu @ 10.0.3.16"

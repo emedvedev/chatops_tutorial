@@ -11,7 +11,7 @@ ack:
 result:
   format: |
     Your server appears to be online! Wonderful.{~}
-    10.0.2.15: online.
+    Staging (10.0.2.15): online.
   extra:
     slack:
       author_name: "Sensu @ 10.0.3.16"
