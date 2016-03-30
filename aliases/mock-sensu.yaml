@@ -21,8 +21,8 @@ result:
       fields:
         - title: Online
           value: 3 servers
-          short: false
+          short: true
         - title: Offline
           value: 1 server
-          short: false
+          short: true
       color: "warning"

@@ -21,8 +21,8 @@ result:
         fields:
         - title: Status
           value: Online
-          short: false
+          short: true
         - title: Uptime
           value: 2m
-          short: false
+          short: true
       color: "good"
