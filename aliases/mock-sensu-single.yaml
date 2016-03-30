@@ -16,6 +16,11 @@ result:
       author_link: "https://github.com/emedvedev"
       author_icon: "https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/sensu/icon.png"
       parameters:
-        status: online
-        uptime: 1m
+        fields:
+        - title: Status
+          value: Online
+          short: false
+        - title: Uptime
+          value: 2m
+          short: false
     color: "success"

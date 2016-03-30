@@ -18,7 +18,11 @@ result:
       author_name: "Sensu @ 10.0.3.16"
       author_link: "https://github.com/emedvedev"
       author_icon: "https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/sensu/icon.png"
-      parameters:
-        online: 3 servers
-        offline: 1 server
+      fields:
+        - title: Online
+          value: 3 servers
+          short: false
+        - title: Offline
+          value: 1 server
+          short: false
     color: "warning"
