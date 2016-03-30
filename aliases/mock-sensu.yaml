@@ -12,7 +12,7 @@ result:
     10.0.2.12: online.
     10.0.2.13: online.
     10.0.2.14: online.
-    10.0.2.15: **offline**.
+    10.0.2.15: *offline*.
   extra:
     slack:
       author_name: "Sensu @ 10.0.3.16"
