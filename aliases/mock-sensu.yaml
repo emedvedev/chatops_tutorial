@@ -7,7 +7,7 @@ formats:
 ack:
   enabled: false
 result:
-  format: | 
+  format: |
     done, here's the full report for your network:{~}
     10.0.2.12: online.
     10.0.2.13: online.
@@ -17,7 +17,7 @@ result:
     slack:
       author_name: "Sensu @ 10.0.3.16"
       author_link: "https://github.com/emedvedev"
-      author_icon: "https://avatars3.githubusercontent.com/u/145218?v=3&s=16"
+      author_icon: "https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/sensu/icon.png"
       parameters:
         online: 3 servers
         offline: 1 server

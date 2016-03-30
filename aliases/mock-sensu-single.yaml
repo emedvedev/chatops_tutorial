@@ -3,7 +3,7 @@ name: "mock-sensu-single"
 description: "Check Sensu status for a single host."
 action_ref: "core.noop"
 formats:
-  - representation: 
+  - representation:
       - "check status for.*"
     display: "check status for {{ server }}"
 ack:
@@ -14,7 +14,7 @@ result:
     slack:
       author_name: "Sensu @ 10.0.3.16"
       author_link: "https://github.com/emedvedev"
-      author_icon: "https://avatars3.githubusercontent.com/u/145218?v=3&s=16"
+      author_icon: "https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/sensu/icon.png"
       parameters:
         status: online
         uptime: 1m
