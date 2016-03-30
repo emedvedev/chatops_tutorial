@@ -5,7 +5,7 @@ action_ref: "core.local"
 formats:
   - display: "restart {{ hostname }}"
     representation:
-      - "restart.*{{ cmd='sleep 3' }}"
+      - "restart.*({{ cmd='sleep 3' }}){0}"
 ack:
   append_url: false
   format: "Restarting your server, wait a moment."
