@@ -17,12 +17,11 @@ result:
       author_name: "Sensu @ 10.0.3.16"
       author_link: "https://github.com/emedvedev"
       author_icon: "https://raw.githubusercontent.com/StackStorm/st2contrib/master/packs/sensu/icon.png"
-      parameters:
-        fields:
-        - title: Status
-          value: Online
-          short: true
-        - title: Uptime
-          value: 2m
-          short: true
+      fields:
+      - title: Status
+        value: Online
+        short: true
+      - title: Uptime
+        value: 2m
+        short: true
       color: "good"
