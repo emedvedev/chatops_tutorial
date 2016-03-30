@@ -9,7 +9,9 @@ formats:
 ack:
   enabled: false
 result:
-  format: "Your server appears to be online! Wonderful.{~}"
+  format: |
+    Your server appears to be online! Wonderful.{~}
+    10.0.2.15: online.
   extra:
     slack:
       author_name: "Sensu @ 10.0.3.16"
@@ -23,4 +25,4 @@ result:
         - title: Uptime
           value: 2m
           short: false
-    color: "success"
+      color: "good"

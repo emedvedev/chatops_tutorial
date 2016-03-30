@@ -25,4 +25,4 @@ result:
         - title: Offline
           value: 1 server
           short: false
-    color: "warning"
+      color: "warning"

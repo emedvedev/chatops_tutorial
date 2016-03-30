@@ -14,4 +14,5 @@ result:
     Restart succeeded, the server is back online: {~}
     10.0.2.15: online.
   extra:
-    color: "success"
+    slack:
+      color: "good"
