@@ -1,0 +1,17 @@
+---
+name: "mock-deploy"
+description: "Deploy to a server"
+action_ref: "chatops-training.fail_on_odd"
+formats:
+  - display: "deploy {{ verson }} to {{ hostname }}"
+    representation:
+      - "deploy.*"
+result:
+  format: |
+    I'm done with deployment, here's how it went:{~}
+    Deploy failed: can't connect to server.
+  extra:
+    slack:
+      color: "danger"
+    security:
+      twofactor: true
