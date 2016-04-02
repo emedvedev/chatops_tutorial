@@ -9,7 +9,11 @@ formats:
 result:
   format: |
     I'm done with deployment, here's how it went:{~}
+    {% if execution.result.succeeded %}
+    Deploy succeeded!
+    {% else %}
     Deploy failed: can't connect to server.
+    {% endif %}
   extra:
     slack:
       color: "danger"
