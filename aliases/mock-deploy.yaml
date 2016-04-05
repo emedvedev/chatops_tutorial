@@ -1,7 +1,7 @@
 ---
 name: "mock-deploy"
 description: "Deploy to a server"
-action_ref: "chatops-training.fail_on_odd"
+action_ref: "chatops-training.fail_on_odd_silent"
 formats:
   - display: "deploy {{ verson }} to {{ hostname }}"
     representation:
@@ -16,6 +16,6 @@ result:
     {% endif %}
   extra:
     slack:
-      color: "danger"
+      color: "{% if execution.result.succeeded %}good{% else %}danger{% endif %}"
     security:
       twofactor: true
