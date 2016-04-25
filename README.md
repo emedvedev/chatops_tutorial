@@ -20,4 +20,4 @@ A small pack for showcasing ChatOps capabilities in StackStorm.
 
 4. `repeat-14.yaml`: an alias with experimental 1.4 features: slack attachment API parameters and two-factor auth.
 
-5. `mock-*.yaml`: aliases for showcasing ChatOps formatting.
+5. `mock-*.yaml`: aliases for showcasing ChatOps formatting (note: the syntax will change in the future).
