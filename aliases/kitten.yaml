@@ -1,0 +1,21 @@
+---
+name: "kitten"
+description: "Post a kitten picture to cheer people up."
+action_ref: "core.noop"
+formats:
+  - "kitten pic"
+ack:
+  enabled: false
+result:
+  format: "your kittens are here! {~}"
+  extra:
+    slack:
+      author_name: "Box kingdom"
+      fields:
+        - title: Kitten headcount
+          value: Eight.
+          short: true
+        - title: Number of boxes
+          value: A bunch.
+          short: true
+      color: "success"
