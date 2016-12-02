@@ -1,7 +1,7 @@
 ---
 version: '2.0'
 
-chatops-training.fail_on_odd:
+chatops_tutorial.fail_on_odd:
 
   type: direct
 

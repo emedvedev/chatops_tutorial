@@ -3,5 +3,4 @@ description: Fail every odd minute (no post_message)
 enabled: true
 entry_point: workflows/fail_on_odd_silent.yaml
 name: fail_on_odd_silent
-pack: chatops-training
 runner_type: mistral-v2

@@ -1,7 +1,7 @@
 ---
 name: "echo"
 description: "Repeat a sentence (version 1.4+)"
-action_ref: "chatops-training.repeatnew"
+action_ref: "chatops_tutorial.repeatnew"
 formats:
   - "say {{ phrase }} in {{ color }}"
 ack:

@@ -1,7 +1,7 @@
 ---
 name: "mock-deploy"
 description: "Deploy to a server"
-action_ref: "chatops-training.fail_on_odd_silent"
+action_ref: "chatops_tutorial.fail_on_odd_silent"
 formats:
   - display: "deploy {{ version }} to {{ hostname }}"
     representation:
