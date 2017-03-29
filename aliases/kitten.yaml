@@ -4,6 +4,7 @@ description: "Post a kitten picture to cheer people up."
 action_ref: "core.noop"
 formats:
   - "kitten pic"
+  - "тест"
 ack:
   enabled: false
 result:
